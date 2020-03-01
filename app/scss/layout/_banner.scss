@@ -1,0 +1,35 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    &__header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        top: 45%;
+        color: black;
+        &__title{
+        text-transform: capitalize;
+        font-size: $font-size-tall-very*1.5;
+        font-weight: 300;
+        padding: 0;
+    }
+        &__content{
+            text-transform: uppercase;
+            font-size: $font-size-tall;
+            font-weight: 200;
+            margin-top: 20px;
+            padding: 0;
+        }
+    }
+    .tree_img{
+        position: absolute;
+        top: 25%;
+        left: 60%;
+        //width: 650px;
+        height: 70vh;
+        
+    }
+}
+
