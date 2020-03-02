@@ -5,39 +5,132 @@ section.sec1{
 
 section.sec2{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #E7B777;
-    z-index: 3;
-
+    .sec2_content{
+        .collective_payment{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid rgba(97, 97, 97, 0.534);
+        text-align: center;
+        width: 60vw;
+        margin-top: 30px;
+        h3{
+        border-bottom: none;
+        font-size: $font-size-tall;
+        font-weight: 500;
+        padding: 15px 0;
+        }
+        p{
+        color: rgba(0, 0, 0, 0.815);
+        padding: 15px 0;
+        line-height: 1.5em;
+        }
+        }
+        width: 50vw;
+        padding: 100px 0 100px 150px;
+        h3{
+        font-size: $font-size-tall-very;
+        font-weight: 500;
+        border-bottom: 2px solid black;
+        padding: 20px 0;
+        }
+        p{
+        color: #0000009d;
+        padding: 20px 0;
+        line-height: 1.5em;
+        span{
+            font-weight: 700;
+            color: black;
+        }
+        
+    }
+    }
 }
 
 section.sec3{
     width: 100%;
-    height: 100vh;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .sec3_content{
+        color: #E7B777;
+        width: 80vw;
+        padding: 100px 0;
+        font-size: $font-size*1.25;
+        h3{
+        font-size: $font-size-tall-very;
+        font-weight: 500;
+        border-bottom: 1px solid rgba(231, 182, 119, 0.698);
+        padding: 20px 0;
+        
+        }
+        p{
+        font-size: $font-size*1.5;
+        line-height: 1.3em;
+        padding: 20px 0;
+        font-weight: 300;
+        line-height: 1.5em;
+        }
+        li{
+        list-style: none;
+        padding: 15px 0;
+        font-weight: 400;
+        }
+    }
 }
 
 section.sec4{
     width: 100%;
-    height: 100vh;
+    height: auto;
+    background-color: #FFF;
+    .sec4_content{
+        width: 50vw;
+        padding: 100px 0 100px 150px;
+        h3{
+        font-size: $font-size-tall-very;
+        font-weight: 500;
+        border-bottom: 2px solid black;
+        padding: 20px 0;
+        }
+        p{
+        color: #000000;
+        padding: 20px 0;
+        line-height: 1.5em;
+        }
+    }
+
 }
 
-section.sec5{
-    width: 100%;
-    height: 100vh;
+#contact{
     
+    p:first-of-type, :nth-of-type(2), :last-of-type{
+        margin-top: 15px;
+    
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        color: black;
+        
+    }
+    .mail{
+        margin-top: 30px;
+        a{
+            margin-left: 10px;
+        }
+    }
+    .phone{
+        margin-top: 10px;
+        a{
+            margin-left: 10px;
+        }
+    }
 }
 
-section.sec6{
-    width: 100%;
-    height: 100vh;
-}
 
-section.sec7{
-    width: 100%;
-    height: 100vh;
-}
-
-section.sec8{
-    width: 100%;
-    height: 100vh;
-}

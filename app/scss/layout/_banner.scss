@@ -7,11 +7,11 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        top: 45%;
+        top: 40%;
         color: black;
         &__title{
         text-transform: capitalize;
-        font-size: $font-size-tall-very*1.5;
+        font-size: $font-size-tall-very*1.75;
         font-weight: 300;
         padding: 0;
     }
@@ -22,6 +22,33 @@
             margin-top: 20px;
             padding: 0;
         }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        .button_home{
+            margin: 40px 10px;
+            text-transform: uppercase;
+            border: 3px solid rgba(31, 29, 29, 0.52);
+            border-radius: 30px;
+            padding: 12px;
+            letter-spacing: 0.2em;
+            cursor: pointer;
+            &:hover{
+                border: 3px solid black; 
+            }
+            i{
+                margin-left: 10px;
+                color: rgb(206, 27, 27);
+            }
+        }
+        .button_link{
+            color: rgba(0, 0, 0, 0.541);
+            cursor: pointer;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
     }
     .tree_img{
         position: absolute;
