@@ -12,7 +12,7 @@ nav{
     left: 0;
     width: 100%;
     height: 20vh;
-    padding: 40px 70px;
+    padding: 40px 50px;
     box-sizing: border-box;
     transition: 0.5s;
     background-color: #fff;
@@ -35,14 +35,14 @@ nav .logo{
     }
     h1{
         float: right;
-        font-size: $font-size*1.15;
-        padding: 40px 0 0 8px;
+        font-size: $font-size;
+        padding: 30px 0 0 8px;
         line-height: 1.2em;
     }
     img{
         float: left;
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         
     }
 }
@@ -70,9 +70,10 @@ nav.black ul li a{
 }
 
 nav ul li a{
+    font-size: $font-size/1.25;
     line-height: 80px;
     color: #646464;
-    padding: 5px 20px ;
+    padding: 5px 15px ;
     text-decoration: none;
     text-transform: uppercase;
     
@@ -88,7 +89,7 @@ nav ul li a:hover,
 
 
 
-@media (max-width: 1500px)
+@media (max-width: 1200px)
 {
 
     .responsive-bar{
@@ -107,8 +108,8 @@ nav ul li a:hover,
     
     .responsive-bar .logo img{
         float: left;
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
         //background-color: rgb(253, 215, 145);
         padding: 10px;
         border-radius: 50%;

@@ -5,8 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>R'éveil à soi</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
+
+
+
 <body>
+
+  <div class="preloader">
+    <div class="loader">
+    <div class="bg"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    </div>
+  </div>
+    
   
   <header  class="header">
 <div class="responsive-bar">
@@ -43,23 +59,30 @@
   </header>
 
   <section id="home"  class="banner">
-    <header class="banner__header">
+    <header class="banner__header rellax" data-rellax-speed="-5">
 
-        <h1 class="banner__header__title">Stéphanie Jauffrineau</h1>
+        <h1 class="banner__header__title " >Stéphanie Jauffrineau</h1>
         <h2 class="banner__header__content">R'éveil à soi</h2>
         
         <div class="buttons">
             <div  class="button_home"><a href="#relaxation" class="button_link">Relaxation</a></div>
             <div  class="button_home"><a href="#hypnose" class="button_link">Mon blog<i class="fa fa-heart" aria-hidden="true"></i></a></div>
         </div>
+        </header>
 
-    </header>
+        
+
+
     <section class="banner_img">
-        <img src="/images/tree.png" class="tree_img"  alt="tree">
+        <img src="/images/tree.png" class="tree_img rellax"  data-rellax-speed="-3" alt="tree">
     </section>
   </section>
 
   <main  class="main">
+
+    <div class="scrolltop">
+          <div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
+        </div>
 
       <section id="hypnose" class="sec2">
 
@@ -250,7 +273,7 @@
         </div>
           <h3>Contact</h3>
   
-          <p>Pour plus d’informations sur R'Eveil à Soi, mon programme, mes activités, mes horaires etc, contactez moi !</p>
+          <p class="contact_information">Pour plus d’informations sur R'Eveil à Soi, mon programme, mes activités, mes horaires etc, contactez moi !</p>
   
           <div class="coordonates">
           <div class="adress">
@@ -260,11 +283,19 @@
   
           <p>85130 LES LANDES-GENUSSON</p>
           </div>
-          <p class="mail"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:someone@yoursite.com">stepha.retailleau@gmail.com</a></p>  
+          <div class="contact_ressources">
+          <p class="mail"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:stepha.retailleau@gmail.com">stepha.retailleau@gmail.com</a></p>  
 
           <p class="phone"><i class="fa fa-mobile" aria-hidden="true"></i><a href="tel:0630143328">06.30.14.33.28</a></p>
+        </div>
 
-          <p class="emotion">Après une séance  <img src="/images/relaxation.png" alt="relaxation"> Vous vous sentirez libre et ressourcé </p>
+        <div class="social_ressources">
+         <p class="social_icons"> Suivez mes actualités et astuces sur les réseaux sociaux <br><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></p>
+        </div>
+          <div class="emotion_content">
+            <img src="/images/relaxation.png" alt="relaxation">
+            <p class="emotion">Après une séance, vous vous sentirez libre et ressourcé </p>
+          </div>
   
           </div>
 
