@@ -1,0 +1,126 @@
+.banner{
+    min-width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    &__header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        top: 48%;
+        color: black;
+        &__title{
+        text-transform: capitalize;
+        font-size: $font-size-tall-very*1.5;
+        font-weight: 300;
+        padding: 0;
+    }
+        &__content{
+            text-transform: uppercase;
+            font-size: $font-size-tall;
+            font-weight: 200;
+            margin-top: 20px;
+            padding: 0;
+        }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        .button_home{
+            margin: 40px 10px;
+            text-transform: uppercase;
+            border: 1px solid rgba(31, 29, 29, 0.52);
+            border-radius: 30px;
+            padding: 10px;
+            letter-spacing: 0.2em;
+            cursor: pointer;
+            &:hover{
+                border: 2px solid rgba(20, 20, 20, 0.52); 
+            }
+            i{
+                line-height: 5px;
+                margin-left: 10px;
+                color: rgb(206, 27, 27);
+            }
+        }
+        .button_link{
+            color: rgba(0, 0, 0, 0.541);
+            cursor: pointer;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    }
+    .tree_img{
+        position: absolute;
+        top: 45vh;
+        left: 65vw;
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner{
+        min-width: 100vw;
+        max-width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        &__header{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            top: 30%;
+            color: black;
+            &__title{
+            text-transform: capitalize;
+            font-size: $font-size-tall*1.1;
+            font-weight: 300;
+            padding: 0;
+        }
+            &__content{
+                text-transform: uppercase;
+                font-size: $font-size*1.25;
+                font-weight: 200;
+                margin-top: 30px;
+                margin-bottom: 50px;
+                padding: 0;
+            }
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .button_home{
+                margin: 10px 130px;
+                text-transform: uppercase;
+                border: 3px solid rgba(31, 29, 29, 0.52);
+                border-radius: 30px;
+                padding: 6px;
+                //letter-spacing: 0.2em;
+                cursor: pointer;
+                &:hover{
+                    border: 3px solid black; 
+                }
+                i{
+                    margin-left: 10px;
+                    color: rgb(206, 27, 27);
+                }
+            }
+            .button_link{
+                color: rgba(0, 0, 0, 0.541);
+                cursor: pointer;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        }
+        .tree_img{
+            
+            display: none;
+        }
+    }
+}
+

@@ -1,0 +1,172 @@
+// navigation responsive
+
+.responsive-bar{
+    display: none;
+}
+
+// navigation desktop
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    padding: 40px 50px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    background-color: #fff;
+    z-index: 1;
+    
+}
+
+nav.black{
+    height: 110px;
+    padding: 20px 40px;
+    
+}
+
+nav .logo{
+    float: left;
+    transition: 0.5s;
+    text-transform: uppercase;
+    p{
+        float: left;
+    }
+    h1{
+        float: right;
+        font-size: $font-size;
+        padding: 30px 0 0 8px;
+        line-height: 1.2em;
+    }
+    img{
+        float: left;
+        width: 70px;
+        height: 70px;
+        
+    }
+}
+
+nav.black .logo{
+    height: 100px;
+}
+
+nav ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+nav ul li{
+    list-style: none;
+
+}
+
+nav.black ul li a{
+    line-height: 60px;
+    
+}
+
+nav ul li a{
+    font-size: $font-size/1.25;
+    line-height: 80px;
+    color: #646464;
+    padding: 5px 15px ;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+
+nav ul li a:hover,
+.nav__link--active {
+    color: #D0AC68;
+    text-decoration:none;
+    
+  }
+
+
+
+@media (max-width: 1200px)
+{
+
+    .responsive-bar{
+        display: block;
+        width: 100%;
+        height: 100px;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        z-index: 2;
+        
+    }
+    
+    .responsive-bar .logo img{
+        float: left;
+        width: 80px;
+        height: 80px;
+        //background-color: rgb(253, 215, 145);
+        padding: 10px;
+        border-radius: 50%;
+        
+    }
+    .responsive-bar .menu h4{
+         float: right;
+         color: black;
+         margin: 0;
+         padding: 0;
+         line-height: 70px;
+         cursor: pointer;
+         text-transform: uppercase;
+        
+    }
+    nav,
+    nav.black{
+        position: absolute;
+        //height: 100px;
+        //padding: 0;
+        
+    }
+    nav .logo {
+        display: none;
+    }
+     nav ul{
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: 0;
+        padding: 0;
+        background: #262626;
+        float: none;
+        display: none;
+
+    }
+    nav ul.active{
+        display: block;
+       
+    }
+
+    nav ul li{
+        width: 100%;
+        padding: 0 80px;
+        
+    }
+    nav ul li a{
+        display: block;
+        padding: 20px 0;
+        width: 100%;
+        //text-align: center;
+        line-height: 30px;
+        color: #fff;
+        border-bottom: 1px solid rgb(161, 161, 161);
+        
+       }
+    
+}
+
+

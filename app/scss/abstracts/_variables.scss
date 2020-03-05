@@ -1,1 +1,75 @@
 $fa-font-path: '~font-awesome/fonts';
+
+$banner-background-color: transparentize(#000, .25);
+$banner-height: 100vh;
+$banner-width: 100vw;
+
+
+$border-width:       3px;
+$border-width-small: ($border-width - 1px);
+$border-width-thin:  ($border-width-small - 1px);
+
+
+$breakpoint-medium: 600px;
+$breakpoint-large: 900px;
+
+
+$color-first:  #7BBCFE;
+$color-second: #8A7EF5;
+$color-third:  #2C334C;
+
+$color-text-first:  #000;
+$color-text-second: #FFF;
+
+
+$fa-font-path: '~font-awesome/fonts';
+
+
+$font-size:           1rem;
+$font-size-small:     ($font-size - .5rem);
+$font-size-tall:      ($font-size + .8rem);
+$font-size-tall-very: ($font-size-tall + .8rem);
+
+
+$font-stack:       ('Roboto', sans-serif);
+$font-stack-title: ('Roboto Slab', serif);
+
+
+$duration:      0.5s;
+$duration-fast: ($duration / 2);
+$duration-slow: ($duration * 2);
+
+
+$gutter:            1rem;
+$gutter-large:      ($gutter * 2);
+$gutter-large-very: ($gutter-large * 2);
+$gutter-small:      ($gutter / 2);
+$gutter-small-very: ($gutter-small / 2);
+
+
+$posts-post-height: 50vh;
+$posts-post-width: 100vw;
+
+// Equivalent à un tableau associatif PHP
+// https://sass-lang.com/documentation/values/maps
+$post-background-color-list: (
+    1: $color-first,
+    2: $color-second,
+    3: #EC8D81,
+    4: #E7B788,
+    5: #8EA9E8,
+    6: #87C5A4
+);
+$post-background-color-transparentize-amount: .25;
+
+
+$skills-color-background: #F4F5F9;
+$skills-color-border: #D2D2D2;
+
+$skill-icon-size: 2.5rem;
+
+
+$wordpress-admin-bar-height:        32px;
+$wordpress-admin-bar-height-mobile: 46px;
+$wordpress-breakpoint-medium: 600px;
+$wordpress-breakpoint-large: 782px;
