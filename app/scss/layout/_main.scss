@@ -1,3 +1,56 @@
+.interlude{
+    
+    img{
+    width: 100vw;
+    height: 500px;
+    background-position: 20% 80%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+}
+
+.inter_staircase{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 40vw;
+        height: 500px;
+    }
+}
+
+.mainintro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    .mainintro_content{
+        color: black;
+        width: 80vw;
+        padding: 40px 0;
+        h3{    
+        font-size: $font-size-tall*1.25;
+        font-weight: 500;
+        border-bottom: 1px solid rgba(231, 182, 119, 0.698);
+        padding: 20px 0;
+        
+        }
+        p{
+        font-size: $font-size*1.15;
+        line-height: 1.3em;
+        padding: 20px 0;
+        font-weight: 400;
+        line-height: 1.5em;
+        }
+        li{
+        list-style: none;
+        padding: 15px 0;
+        font-weight: 400;
+        }
+    }
+}
+
 section.sec1{
     width: 100%;
     height: 100vh;
@@ -6,16 +59,27 @@ section.sec1{
 section.sec2{
     width: 100%;
     height: auto;
-    background-color: #E7B777;
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-column-gap: 100px;
+    img{
+        margin-top: 150px;
+        padding: 10px 0;
+        width: 500px;
+        height: auto;
+    }
     .sec2_content{
+        
         .collective_payment:hover{
             border: 2px solid rgb(97, 97, 97);
-            background-color: rgb(246, 206, 152);
+            background-color: #1AA9B6;
 
 
         }
         .collective_payment{
-        background-color: rgb(235, 190, 132);
+        background-color: #FFF;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -59,26 +123,28 @@ section.sec2{
 section.sec3{
     width: 100%;
     height: auto;
-    background-color: black;
     display: flex;
     justify-content: center;
     text-align: center;
+    background-image: url('/images/pissenlitter.jpg');
+    background-size: cover;
+    background-position: 75% 25%;
     .sec3_content{
-        color: #E7B777;
+        color: #fff;
         width: 80vw;
-        padding: 100px 0;
-        h3{
-        font-size: $font-size-tall*1.1;
+        padding: 40px 0;
+        h3{    
+        font-size: $font-size-tall*1.25;
         font-weight: 500;
         border-bottom: 1px solid rgba(231, 182, 119, 0.698);
         padding: 20px 0;
         
         }
         p{
-        font-size: $font-size;
+        font-size: $font-size*1.15;
         line-height: 1.3em;
         padding: 20px 0;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 1.5em;
         }
         li{
@@ -93,6 +159,16 @@ section.sec4{
     width: 100%;
     height: auto;
     background-color: #FFF;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-column-gap: 100px;
+    img{
+        margin-top: 150px;
+        padding: 10px 0;
+        width: 500px;
+        height: auto;
+    }
     .sec4_content{
         width: 50vw;
         padding: 100px 0 100px 150px;
@@ -108,6 +184,7 @@ section.sec4{
         line-height: 1.5em;
         }
     }
+    
 
 }
     
@@ -115,7 +192,7 @@ section.sec4{
     
     width: 100%;
     height: auto;
-    background-color: #E7B777;
+    background-color: #1AA9B6;
     .sec5_content{
         display: flex;
         flex-direction: column;
