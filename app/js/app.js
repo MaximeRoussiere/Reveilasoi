@@ -4,13 +4,13 @@ var app = {
   init: function() {
     console.log('init');
 
-    // PRELOADER
+    /*// PRELOADER
 
     $(window).on('load', function() { // makes sure the whole site is loaded 
       $('.preloader').fadeOut(500); // will first fade out the loading animation 
       $('.loader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website. 
       $('body').delay(100).css({'overflow-y':'visible'});
-    })
+    })*/
 
     // PARALLAX BANNER
 
