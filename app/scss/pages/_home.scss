@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    
+    width: 100vw;
 }
 
 /* Preloader */
@@ -15,13 +15,13 @@ body{
     right: 0;
     bottom: 0;
     z-index: 99;
-    background: rgba(0, 153, 255, 1);
+    background: black;
     animation: bgg 16087ms ease-in alternate infinite;
   }
   @keyframes bgg {
-    0% { background: rgba(231, 183, 119, 1); }
-    50% { background: rgba(26, 165, 107, 1); }
-    100% { background: rgb(255, 255, 255); }
+    0% { background: #1AA9B6; }
+    50% { background: #1AA9B6; }
+    100% { background: #1AA9B6; }
   }
 
 .loader {
