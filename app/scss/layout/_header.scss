@@ -11,8 +11,8 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 20vh;
-    padding: 40px 50px;
+    max-height: 15vh;
+    padding: 30px 40px;
     box-sizing: border-box;
     transition: 0.5s;
     background-color: #fff;
@@ -83,13 +83,16 @@ nav ul li a{
     
 }
 
-
-nav ul li a:hover,
 .nav__link--active {
     //color: #D0AC68;
     color: #1AA9B6;
     text-decoration:none;
-    
+  }
+
+  nav ul li a:hover{
+    color: #1AA9B6;
+    text-decoration:underline;
+    margin-bottom: 5px;
   }
 
 
