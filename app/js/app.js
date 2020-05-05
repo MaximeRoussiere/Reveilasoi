@@ -47,12 +47,12 @@ var app = {
     // ANIME HEADER NAVABAR RESPONSIVE ONCLICK
 
   $(document).ready(function(){
-	  $(".menu h4").click(function(){
-		  $("nav ul").slideToggle(750);  
+	  $(".responsive-bar .menu h4").click(function(){
+		  $('div .navigation_link').slideToggle(750);  
 		});
 		$(window).resize(function() {		
 			if (  $(window).width() > 1500 ) {			
-				$('nav ul').removeAttr('style');
+				$('div .navigation_link').removeAttr('style');
 			}
 		});
   });

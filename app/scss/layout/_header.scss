@@ -10,7 +10,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     max-height: 15vh;
     padding: 30px 40px;
     box-sizing: border-box;
@@ -18,6 +18,21 @@ nav{
     background-color: #fff;
     z-index: 1;
     
+}
+
+.navigation_blog{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-height: 15vh;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    background-color: #fff;
+    z-index: 1;
 }
 
 nav.black{
@@ -34,8 +49,8 @@ nav .logo{
         float: left;
     }
     h1{
-        float: right;
-        font-size: $font-size;
+        float: left;
+        font-size: $font-size*1.25;
         font-weight: 400;
         padding: 30px 0 0 8px;
         line-height: 1.2em;
@@ -55,7 +70,7 @@ nav.black .logo{
     height: 100px;
 }
 
-nav ul{
+.navigation_link{
     float: right;
     margin: 0;
     padding: 0;
@@ -63,20 +78,21 @@ nav ul{
     
 }
 
-nav ul li{
+/*.navigation_right .navigation_link .section_link{
     list-style: none;
 
-}
+}*/
 
-nav.black ul li a{
+.nav__link{
     line-height: 60px;
     
 }
 
-nav ul li a{
-    font-size: $font-size/1.25;
+.nav__link{
+    font-size: $font-size;
+    font-weight: 600;
     line-height: 80px;
-    color: #646464;
+    color: #555555;
     padding: 5px 15px ;
     text-decoration: none;
     text-transform: uppercase;
@@ -89,13 +105,32 @@ nav ul li a{
     text-decoration:none;
   }
 
-  nav ul li a:hover{
+.nav__link:hover{
     color: #1AA9B6;
     text-decoration:underline;
     margin-bottom: 5px;
   }
 
+.navigation_center{
+    grid-column: 2/2;
+    margin: 0;
+    padding: 0;        
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .blog_title{
+        width: 70%;
+        color: #6e6e6e;
+    }
+}
 
+.block_logo{
+    grid-column: 1/1;
+}
+
+.navigation_right{
+    grid-column: 3/3;
+}
 
 @media (max-width: 1200px)
 {
@@ -142,7 +177,7 @@ nav ul li a{
     nav .logo {
         display: none;
     }
-     nav ul{
+     .navigation_right .navigation_link{
         position: relative;
         width: 100%;
         top: 100px;
@@ -151,13 +186,14 @@ nav ul li a{
         background: #262626;
         float: none;
         display: none;
+        
     }
-    nav ul.active{
+    .navigation_right .navigation_link.active{
         display: block;
-       
+        
     }
 
-    nav ul li{
+    .navigation_right .navigation_link .section_link{
         width: 100%;
         padding: 0 50px;
         
@@ -166,13 +202,13 @@ nav ul li a{
     /*nav.black{
         height: 60vh;
         padding: 0px 50px;
-        ul li a{
+        .navigation_link .section_link .nav__link{
         line-height: 20px;
         //padding: 0 60px;
     }
     }*/
 
-    nav ul li a{
+    .navigation_right .navigation_link .section_link .nav__link{
         display: block;
         padding: 20px 0;
         width: 100%;

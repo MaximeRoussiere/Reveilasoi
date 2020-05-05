@@ -121,7 +121,7 @@ section.sec3{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: url('/images/staircaseedit.jpg');
+    background-image: url('../assets/images/staircaseedit.jpg');
     background-size: cover;
     background-position: 62% 38%;
     margin: 100px 0;
@@ -231,7 +231,12 @@ section.sec4bis{
     }
     width: 100%;
     height: auto;
-    background-color: #1AA9B6;
+    //background-color: #1AA9B6;
+    background-image: url('../assets/images/airballoon.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //background-position: 120% -20%;
     .sec5_content{
         display: flex;
         flex-direction: column;
@@ -479,7 +484,7 @@ section.sec4bis{
             display: flex;
             justify-content: center;
             text-align: center;
-            background-image: url('/images/staircaseedit.jpg');
+            background-image: url('../assets/images/staircaseedit.jpg');
             background-size: cover;
             background-position: center;
             //margin: 100px 0;
