@@ -133,7 +133,7 @@ wp_head();
     ?>
 
     <div class="navigation_center">
-       <h2 class="blog_title"> <a href="http://localhost/projetspersos/Reveil-theme/mon-blog/">Bienvenue sur la page de prise de rendez-vous</a></h2>
+       <h2 class="blog_title"> <a href="http://localhost/projetspersos/Reveil-theme/mon-blog/">Bienvenue, vous pouvez réserver maintenant</a></h2>
     </div>
 
 
