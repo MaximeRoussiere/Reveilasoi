@@ -1,24 +1,42 @@
 <?php
 get_header('classik');
+?>
 
-if (have_posts()) :
+
+
+    <?php
+    if (have_posts()) :
 
     ?>
 
-    <section class="blog_home">
-
-    <?php
-
-    while (have_posts()) :
-       the_post();
           
-?>
+
         <div class="page">
-        
         <?php
-        the_title();
-        the_content();
-        ?>
+
+      while (have_posts()) :
+       the_post();
+      ?>
+        
+      <section class="page_title">
+
+      <?php  the_title();?>
+      
+      </section>
+
+      <section class="page_classik_content">
+
+       <?php  the_content(); ?>
+
+      </section>  
+
+      <section class="page_classik_image">
+
+      <img  src="<?= get_the_post_thumbnail_url(); ?>">
+
+      </section>
+          
+          
           </div>
     
     <?php
@@ -26,11 +44,12 @@ if (have_posts()) :
 
     ?>
 
-</section>
+  
 
     <?php
     endif;
+?>
 
-
+<?php
   get_footer(); 
   ?>

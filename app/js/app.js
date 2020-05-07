@@ -73,7 +73,7 @@ var app = {
 	
 		function onScroll(event){
 			var scrollPosition = $(document).scrollTop();
-			$('.nav__link').each(function () {
+			$('.navigation_link li a').each(function () {
 				var currentLink = $(this);
 				var refElement = $(currentLink.attr("href"));
 				if (refElement.position().top -200 <= scrollPosition && refElement.position().top -200 + refElement.height() > scrollPosition) {				

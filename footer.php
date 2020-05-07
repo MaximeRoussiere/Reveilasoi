@@ -13,6 +13,8 @@
          Tous droits réservés 2020 • Stéphanie Jauffrineau - Animateur en Technique de Relaxation - <a class="" href="">Mentions légales</a></p>
 </div>
   </footer>
+
+  
   <script src="js/app.js"></script>
 
   <?php

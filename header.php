@@ -120,18 +120,18 @@ wp_head();
             endif;
           ?>
 
-        <?php /*
+        <?php 
     wp_nav_menu(
     [
       'theme_location'=>'header-menu',
       'menu_class'=>'navigation_link',
       'container'=>'div',
-      'container_class'=>'navigation_right',
+      'container_class'=>'navigation_right', 
     ]
-    ); */
+    ); 
     ?>
 
-     <div class="navigation_right">  
+     <!--<div class="navigation_right">  
 
     <ul class="navigation_link">
        
@@ -144,7 +144,7 @@ wp_head();
           <li class="section_link"><a href="#apropos" class="nav__link">A propos</a></li>
           <li class="section_link"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
-  </div> 
+  </div> -->
 
       </nav>
   </header>
@@ -179,7 +179,10 @@ wp_head();
         
         <div class="buttons">
             <div  class="button_home"><a href="<?= get_post_type_archive_link('post') ?>" class="button_link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/clovers.png" class="clovers"  alt="clovers">Mon blog<img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/stars.png" class="stars"  alt="stars"></a></div>
+            <div  class="button_home"><a href="<?php echo esc_url( get_page_link( 122 ) ); ?>" class="button_link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/calendar.png" class="calendar"  alt="clovers">Réservez votre séance</a></div>
+
         </div>
+  
         </header>
 
         

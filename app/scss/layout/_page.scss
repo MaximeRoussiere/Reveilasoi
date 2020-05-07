@@ -77,12 +77,12 @@
     .fields label{
         font-size: $font-size*1.20;
         padding: 10px 0;
-        &:nth-of-type(1){
         line-height: 1.4em;
         font-style: italic;
         color: #fff;
+        
     }
-    }
+    
     .fields input{
         text-transform: none;
         background-color: rgb(87, 87, 87);
@@ -98,7 +98,7 @@
         font-size: $font-size*1.20;
     }
     .ui-datepicker-inline{
-        //max-width:none !important; 
+        max-width:none !important; 
     }
     .ui-datepicker-header{
     background:#d34b22 ; 
@@ -129,3 +129,62 @@
     }
 }
 }
+
+.page_success{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: rgb(37, 146, 156);
+    margin: 0;
+    width: 100vw;
+    &_content{
+        color: #fff;
+        font-size: $font-size*1.2;
+        font-weight: 500;
+        width: 40%;
+        line-height: 1.5em;
+        padding: 20px 0;
+    }
+    &_content_link{
+            text-align: start;
+            color: #442e28;
+            margin: 20px;
+            &:hover{
+                color: #fff;
+            }
+    }
+    &_blocklink{
+        width: 100%;
+        margin: 20px 0;
+        border: 1px solid #fff;
+        padding: 20px 10px;
+       
+        .link_image img{
+            width: 50px;
+        }
+        .link_image_list{
+            width: 25px;
+        }
+    
+    }
+    &_image img{
+        text-align: center;
+        width: 400px;
+        height: 250px;
+    }
+    &_list{
+        text-align: start;
+        margin-left: 30px;
+    }
+    
+}
+.page_fail_content{
+        color: rgb(200, 28, 28);
+        font-size: $font-size*1.2;
+        font-weight: 500;
+        width: 40%;
+        line-height: 1.5em;
+        padding: 20px 0;
+    }

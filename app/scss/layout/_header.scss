@@ -90,7 +90,7 @@ nav.black .logo{
 
 .nav__link{
     font-size: $font-size;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 80px;
     color: #555555;
     padding: 5px 15px ;
@@ -132,7 +132,7 @@ nav.black .logo{
     grid-column: 3/3;
 }
 
-@media (max-width: 1200px)
+@media (max-width: 1350px)
 {
 
     .responsive-bar{
@@ -145,7 +145,7 @@ nav.black .logo{
         left: 0;
         padding: 15px 20px;
         box-sizing: border-box;
-        z-index: 2;
+        z-index: 3;
         
     }
     
@@ -166,7 +166,7 @@ nav.black .logo{
          line-height: 70px;
          cursor: pointer;
          text-transform: uppercase;
-        
+        z-index: 3;
     }
     nav{
         position: absolute;

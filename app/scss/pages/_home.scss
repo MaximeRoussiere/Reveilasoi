@@ -6,6 +6,47 @@ body{
     width: 100vw;
 }
 
+// header page 404
+   
+.header_404{
+  min-width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.error_block{
+   background-image: url('../assets/images/butterfly.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   min-width: 80vw;
+   max-width: 80vw;
+   position: absolute;
+   top: 0;
+   left: 10%;
+   height: 100vh;
+
+}
+
+.errorpage{
+  position: fixed;
+  padding-top: 150px;
+  padding-left: 20px;
+  color: #FFF;
+  font-size: $font-size-tall-very;
+  font-weight: 700;
+  min-width: 60vw;
+  max-width: 60vw;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  a{
+     color: rgb(230, 113, 35);
+  }
+}
+
+
 /* Preloader */
 
 .preloader{

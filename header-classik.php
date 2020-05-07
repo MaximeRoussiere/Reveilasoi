@@ -141,7 +141,8 @@ wp_head();
       <ul class="navigation_link">
        
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/" class="nav__link">Accueil</a></li>
-          
+          <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/#contact" class="nav__link">Contact</a></li>
+
       </ul>
     </div> 
 
