@@ -55,9 +55,10 @@ section.sec2{
     grid-column-gap: 100px;
     img{
         margin-top: 100px;
-        padding: 10px 0;
-        width: 500px;
+        padding: 10px;
+        width: 60%;
         height: auto;
+        background-color: rgb(255, 127, 67);
     }
     .accessbars img{
         width: 500px;
@@ -67,8 +68,9 @@ section.sec2{
         
         .collective_payment:hover{
             border: 2px solid rgb(97, 97, 97);
-            background-color: #1AA9B6;
-
+            background-color: rgb(45, 192, 206);
+            color: #FFF;
+            padding: 15px 0;
 
         }
         .collective_payment{
@@ -76,10 +78,11 @@ section.sec2{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: 2px solid rgba(97, 97, 97, 0.534);
+        border: 1px solid rgba(97, 97, 97, 0.534);
+        padding: 15px 0;
         text-align: center;
         width: 60vw;
-        margin-top: 30px;
+        margin-top: 10px;
         h3{
         border-bottom: none;
         font-size: $font-size-tall;
@@ -110,6 +113,10 @@ section.sec2{
         }
         
     }
+    .engagement_content p{
+            margin-top: 0;
+            padding-top: 0;
+        }
     }
 }
 
@@ -124,20 +131,21 @@ section.sec3{
     background-image: url('../assets/images/staircaseedit.jpg');
     background-size: cover;
     background-position: 62% 38%;
-    margin: 100px 0;
+    margin: 0;
     .sec3_content{
         color: rgb(255, 251, 251);
+        background-color: rgba(0,0,0,0.4);
         width: 80vw;
         padding: 40px 0;
         h3{    
         font-size: $font-size-tall*1.25;
-        font-weight: 500;
+        font-weight: 800;
         border-bottom: 1px solid rgba(231, 182, 119, 0.698);
         padding: 20px 0;
         
         }
         p{
-        font-size: $font-size*1.25;
+        font-size: $font-size*1.5;
         line-height: 1.3em;
         padding: 20px 0;
         font-weight: 400;
@@ -152,10 +160,7 @@ section.sec3{
 }
 
 section.sec4{
-    .profil_cam img{
-        width: 350px;
-        border-radius: 50% 50%;
-    }
+    
     width: 100%;
     height: auto;
     background-color: #FFF;
@@ -164,16 +169,20 @@ section.sec4{
     grid-template-rows: auto;
     grid-column-gap: 50px;
     .sec4_img img{
-        margin-top: 100px;
-        margin-left: 150px;
-        padding: 0;
-        width: 500px;
+        background-color: rgb(255, 127, 67);
+        padding: 10px;
+        width: 70%;
         height: auto;
+    }
+    .sec4_img{
+    
+        margin: 50px 0 0 180px;
     }
     .sec4mobile_img img{
         display: none;
     }
     .sec4_content{
+        margin-right: 150px;
         //width: 50vw;
         padding: 50px 150px 0 0;
         h3{
@@ -192,7 +201,10 @@ section.sec4{
    
 section.sec4bis{
     .profil_cam img{
-        width: 350px;
+        background-color: rgb(255, 127, 67);
+        margin-top: 20px;
+        padding: 10px;
+        width: 450px;
         border-radius: 50% 50%;
     }
     width: 100%;
@@ -210,7 +222,7 @@ section.sec4bis{
     }
     .sec4bis_content{
         width: 50vw;
-        padding: 100px 0px 100px 150px;
+        padding: 0px 0px 100px 150px;
         h3{
         font-size: $font-size-tall;
         font-weight: 500;

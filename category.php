@@ -11,14 +11,14 @@ get_header('nav');
 
 <div class="categories">
   <ul>
-    <li><a href="http://localhost/projetspersos/Reveil-theme/mon-blog/">tous les articles</a></li>
+  <li><a href="http://localhost/projetspersos/Reveil-theme/blog/"><i class="fa fa-tag" aria-hidden="true"></i>tous les articles</a></li>
     <?php wp_list_categories('title_li='); ?>
   </ul>
 </div>
 
 <div class="authors">
   <ul>
-    <li><a href="http://localhost/projetspersos/Reveil-theme/mon-blog/">tous les auteurs</a></li>
+    <li><a href="http://localhost/projetspersos/Reveil-theme/blog/"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>tous les auteurs</a></li>
     <?php wp_list_authors('title_li='); ?>
   </ul>
 </div>
@@ -57,7 +57,7 @@ get_header('nav');
     $categories = get_the_category();
         foreach ($categories as $category) : 
         ?>
-        <a href="<?= get_category_link($category->term_id); ?>"  class="btn-<?= strtolower($category->name) ?>"><?= $category->name ?></a> 
+        <a href="<?= get_category_link($category->term_id); ?>"  class="btn-<?= strtolower($category->name) ?>"><i class="fa fa-tag"></i><?= $category->name ?></a> 
         <?php endforeach; ?>
 
    <?php

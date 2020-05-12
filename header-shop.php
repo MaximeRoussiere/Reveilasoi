@@ -78,7 +78,7 @@ wp_head();
           ?>
 
 <div class="navigation_center">
-       <h2 class="blog_title"> <a href="http://localhost/projetspersos/Reveil-theme/blog/">Bienvenue sur le blog Reveil à soi</a></h2>
+       <h2 class="blog_title"> <a href="http://localhost/projetspersos/Reveil-theme/blog/">Bienvenue sur la boutique</a></h2>
     </div>
 
         
@@ -143,7 +143,7 @@ wp_head();
     ?>
 
     <div class="navigation_center">
-       <h2 class="blog_title"> <a href="http://localhost/projetspersos/Reveil-theme/blog/">Bienvenue sur le blog Reveil à soi</a></h2>
+       <h2 class="blog_title"> <a href="http://localhost/projetspersos/Reveil-theme/blog/">Bienvenue sur la boutique</a></h2>
     </div>
 
 

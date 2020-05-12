@@ -635,22 +635,23 @@ if ($relax_pages_query->have_posts()) :
           if ($engagement_pages_query->have_posts()) :
 
           ?>   
+        <section class="engagement_block">
+              <?php
 
-          <?php
+              while ($engagement_pages_query->have_posts()) :
+              $engagement_pages_query->the_post();
+              ?>
 
-          while ($engagement_pages_query->have_posts()) :
-          $engagement_pages_query->the_post();
-          ?>
-
-          <p><?php the_content(); ?></p>
-          
-          <?php
-            endwhile;
-          ?>
-
-       <?php
-            endif;
-          ?>
+          <section class="engagement_content">
+              <p><?php the_content(); ?></p>
+          </section>
+                <?php
+                  endwhile;
+                ?>
+        </section>
+                      <?php
+                          endif;
+                        ?>
 
     </section>  
       
@@ -694,20 +695,25 @@ if ($relax_pages_query->have_posts()) :
 
           <p>Hypnologue Praticien 2ème degré.</p>
           -->
-          </div>
+         </div>
+          
+          <div class="profil_cam">
+            <img src="<?= get_the_post_thumbnail_url(); ?>">
+          </div> 
+        
+        
 
           <?php
             endwhile;
           ?>
+          
+      </section>
 
           <?php
             endif;
           ?>
 
-          <div class="profil_cam">
-            <img src="<?= get_the_post_thumbnail_url(); ?>">
-          </div>
-      </section>
+          
 
       
       <?php

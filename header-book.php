@@ -64,7 +64,11 @@ wp_head();
       </section>
     
       <div class="menu">
-        <h4 id="navigation-menu"><?php the_title(); ?></h4>
+      <ul class="navigation_link">
+       
+       <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/" class="nav__link">Accueil</a></li>
+       
+   </ul>
       </div>
     </section>
       <?php
