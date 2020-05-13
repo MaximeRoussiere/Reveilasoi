@@ -57,7 +57,7 @@
                   margin:0;
                   font-size: 1.4em;
                   letter-spacing: 0.05em;
-                  text-transform: uppercase;
+                  text-transform: lowercase;
                   &:hover{
                         background-color: rgb(209, 209, 209);
                         color: $blue;
@@ -100,7 +100,7 @@
                 color:white;
                 -webkit-appearance: none;
                 border: none;
-                text-transform: uppercase;
+                text-transform: lowercase;
     position:relative;
             padding: 13px 50px;
             font-size: 1.4em;
@@ -188,7 +188,7 @@
           
                         // Label
                         label {
-                              text-transform: uppercase;
+                              text-transform: lowercase;
                               position:absolute;
                               top:0;
                               left:0;
@@ -227,7 +227,7 @@
                               color:$blue;
                               font-size: 1.4em;
                               letter-spacing: 0.05em;
-                              text-transform: uppercase;
+                              text-transform: lowercase;
           
                               &#msg {
                                     height: 50px;

@@ -1,5 +1,366 @@
-.woocommerce-ordering{
-    li{
-        background-color: green;
+//CHECKOUT PAGE
+
+.woocommerce{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: rgb(243, 243, 243);
+    padding: 150px 200px 20px 200px;
+    .woocommerce-billing-fields h3{
+        margin: 0;
+        padding: 0 0 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: $font-size-tall;
+    }
+    .checkout_coupon.woocommerce-form-coupon{
+        margin-top: 0;
+        input{
+            background-color: rgb(212, 212, 212);
+            color: black;
+            font-size: $font-size;
+        
+        &:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        &::placeholder{
+            color: rgb(35, 134, 35);
+        }
+    }
+    }
+    
+    .checkout.woocommerce-checkout {
+        display: grid;
+        align-content: start;
+        grid-template-columns: "auto auto";
+
+        
+        grid-template-rows: "30px 30px"
+                            "auto auto"
+                            "auto auto";
+        grid-template-areas: "details title"
+                            "details payment"
+                            "details none";
+        column-gap: 15px;
+        row-gap: 20px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        color: #fff;
+        #order_review_heading{
+        grid-area: title;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: $font-size-tall;
+        color: black;;
+        }
+        #customer_details{
+            grid-area: details;
+            color: black;
+            input{
+                background-color: rgb(185, 185, 185);
+                color: black;
+                font-size: $font-size;
+                border: 1px solid rgb(93, 93, 93);
+                &:hover{
+                    background-color: rgb(221, 221, 221);
+                }
+                &::placeholder{
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+        #order_review{
+            grid-area: payment;
+            color: black;
+            .form-row.place-order{
+                p{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        
+}
+    .woocommerce-input-wrapper{
+        display: block;
+        width: 100%;
+        
+        
     }
 }
+.woocommerce-additional-fields__field-wrapper span{
+    textarea{
+        background-color: rgb(185, 185, 185);
+                color: black;
+                padding: 10px;
+                font-size: $font-size;
+                border: 1px solid rgb(93, 93, 93);
+                &:hover{
+                    background-color: rgb(221, 221, 221);
+                }
+                &::placeholder{
+                    color: rgb(0, 0, 0);
+                }
+    }
+}
+
+ 
+// MEDIA QUERIES CHECKOUT
+
+@media screen and (max-width: 1400px) {
+
+    .woocommerce{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        background-color: rgb(243, 243, 243);
+        padding: 150px 100px 20px 100px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .woocommerce{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        background-color: rgb(243, 243, 243);
+        padding: 150px 50px 20px 50px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .woocommerce{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        background-color: rgb(243, 243, 243);
+        padding: 150px 30px 20px 30px;
+        .woocommerce-billing-fields h3{
+            margin: 0;
+            padding: 0 0 10px 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: $font-size-tall;
+        }
+        .checkout_coupon.woocommerce-form-coupon{
+            margin-top: 0;
+            input{
+                background-color: rgb(212, 212, 212);
+                color: black;
+                font-size: $font-size;
+            
+            &:hover{
+                background-color: rgb(255, 255, 255);
+            }
+            &::placeholder{
+                color: rgb(35, 134, 35);
+            }
+        }
+        }
+        
+        .checkout.woocommerce-checkout {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color: #fff;
+            #order_review_heading{
+            
+            text-align: center;
+            text-transform: uppercase;
+            font-size: $font-size-tall;
+            color: black;;
+            }
+            #customer_details{
+                
+                color: black;
+                input{
+                    background-color: rgb(185, 185, 185);
+                    color: black;
+                    font-size: $font-size;
+                    border: 1px solid rgb(93, 93, 93);
+                    &:hover{
+                        background-color: rgb(221, 221, 221);
+                    }
+                    &::placeholder{
+                        color: rgb(0, 0, 0);
+                    }
+                }
+            }
+            #order_review{
+               
+                color: black;
+                .form-row.place-order{
+                    p{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            table{
+                background-color: rgb(255, 255, 255);
+                color: black;
+            }
+        .woocommerce-cart-form{
+        background-color: #fff;
+        }
+    }
+        .woocommerce-input-wrapper{
+            display: block;
+            width: 100%;
+            
+            
+        }
+    }
+    .woocommerce-additional-fields__field-wrapper span{
+        textarea{
+            background-color: rgb(185, 185, 185);
+                    color: black;
+                    padding: 10px;
+                    font-size: $font-size;
+                    border: 1px solid rgb(93, 93, 93);
+                    &:hover{
+                        background-color: rgb(221, 221, 221);
+                    }
+                    &::placeholder{
+                        color: rgb(0, 0, 0);
+                    }
+        }
+    }
+    
+     
+}
+
+@media screen and (max-width: 600px) {
+
+    .woocommerce{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        background-color: rgb(243, 243, 243);
+        padding: 150px 20px 20px 20px;
+        .woocommerce-billing-fields h3{
+            margin: 0;
+            padding: 0 0 10px 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: $font-size-tall;
+        }
+        .checkout_coupon.woocommerce-form-coupon{
+            margin-top: 0;
+            input{
+                background-color: rgb(212, 212, 212);
+                color: black;
+                font-size: $font-size;
+            
+            &:hover{
+                background-color: rgb(255, 255, 255);
+            }
+            &::placeholder{
+                color: rgb(35, 134, 35);
+            }
+        }
+        }
+        
+        .checkout.woocommerce-checkout {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color: #fff;
+            #order_review_heading{
+            
+            text-align: center;
+            text-transform: uppercase;
+            font-size: $font-size-tall;
+            color: black;;
+            }
+            #customer_details{
+                
+                color: black;
+                input{
+                    background-color: rgb(185, 185, 185);
+                    color: black;
+                    font-size: $font-size;
+                    border: 1px solid rgb(93, 93, 93);
+                    &:hover{
+                        background-color: rgb(221, 221, 221);
+                    }
+                    &::placeholder{
+                        color: rgb(0, 0, 0);
+                    }
+                }
+            }
+            #order_review{
+               
+                color: black;
+                .form-row.place-order{
+                    p{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            table{
+                background-color: rgb(255, 255, 255);
+                color: black;
+            }
+        .woocommerce-cart-form{
+        background-color: #fff;
+        }
+    }
+        .woocommerce-input-wrapper{
+            display: block;
+            width: 100%;
+            
+            
+        }
+    }
+    .woocommerce-additional-fields__field-wrapper span{
+        textarea{
+            background-color: rgb(185, 185, 185);
+                    color: black;
+                    padding: 10px;
+                    font-size: $font-size;
+                    border: 1px solid rgb(93, 93, 93);
+                    &:hover{
+                        background-color: rgb(221, 221, 221);
+                    }
+                    &::placeholder{
+                        color: rgb(0, 0, 0);
+                    }
+        }
+    }
+    
+     
+}
+
+// CART PAGE
+
+.woocommerce-cart-form{
+    float: left;
+    
+}
+.cart-collaterals{
+    width: 50%;
+    float: right;
+}
+
+table{
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+    .woocommerce-cart-form{
+    background-color: #fff;
+    }

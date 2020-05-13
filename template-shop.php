@@ -12,37 +12,21 @@ get_header('shop');
 
 ?>
 
+      
 
-<div class="content">
+        
+                  <?php
+              if (have_posts()) :
+            
+                while (have_posts()) :
+                the_post();
+                ?>
+                <?php the_title(); ?>
+                          <?php the_content(); ?>
 
-    <div class="container">
+          <?php endwhile; ?>
+          <?php endif; ?>
 
-    <?php
-    if (have_posts()) :
-
-      while (have_posts()) :
-       the_post();
-      ?>
-
-    <div class="row">
-
-
-        <div class="col-12">
-        <?php the_title(); ?>
-                <?php the_content(); ?>
-
-
-    </div>
-
-    
-    </div>
-
-    <?php endwhile; ?>
-<?php endif; ?>
-
-</div>
-
-</div>
 
 
 <?php
