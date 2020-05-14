@@ -120,7 +120,7 @@ wp_head();
             endif;
           ?>
 
-        <?php 
+        <?php /*
     wp_nav_menu(
     [
       'theme_location'=>'header-menu',
@@ -128,10 +128,10 @@ wp_head();
       'container'=>'div',
       'container_class'=>'navigation_right', 
     ]
-    ); 
+    ); */
     ?>
 
-     <!--<div class="navigation_right">  
+     <div class="navigation_right">  
 
     <ul class="navigation_link">
        
@@ -144,7 +144,7 @@ wp_head();
           <li class="section_link"><a href="#apropos" class="nav__link">A propos</a></li>
           <li class="section_link"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
-  </div> -->
+  </div> 
 
       </nav>
   </header>

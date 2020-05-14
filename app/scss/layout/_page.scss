@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     height: auto;
+    margin-bottom: 30px;
     &_title{
         position: relative;
         font-size: $font-size-tall-very;
@@ -32,6 +33,7 @@
     &_image img{
     position: absolute;
     top: 0;
+    
     min-width: 100vw;
     max-width: 100vw;
     height: auto;

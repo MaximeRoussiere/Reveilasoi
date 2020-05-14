@@ -53,48 +53,20 @@ section.sec2{
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-column-gap: 100px;
+    
     img{
-        margin-top: 100px;
-        padding: 10px;
         width: 60%;
+        margin-top: 80px;
+        padding: 10px;
         height: auto;
         background-color: rgb(255, 127, 67);
     }
     .accessbars img{
+        margin-top: 80px;
         width: 500px;
         height: 500px;
     }
     .sec2_content{
-        
-        .collective_payment:hover{
-            border: 2px solid rgb(97, 97, 97);
-            background-color: rgb(45, 192, 206);
-            color: #FFF;
-            padding: 15px 0;
-
-        }
-        .collective_payment{
-        background-color: #FFF;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: 1px solid rgba(97, 97, 97, 0.534);
-        padding: 15px 0;
-        text-align: center;
-        width: 60vw;
-        margin-top: 10px;
-        h3{
-        border-bottom: none;
-        font-size: $font-size-tall;
-        font-weight: 500;
-        padding: 0;
-        }
-        p{
-        color: rgba(0, 0, 0, 0.815);
-        padding: 15px 0;
-        line-height: 1.5em;
-        }
-        }
         width: 50vw;
         padding: 50px 0 100px 150px;
         h3{
@@ -120,7 +92,84 @@ section.sec2{
     }
 }
 
+.payment_block{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 50px 0 30px 150px;
+    background-color: rgb(228, 206, 121);
+    a{
+        color: black;
+        &:hover{
+            color:#fff;
+            text-decoration: none;
+        }
+    }
+.booking_link{
+    font-size: $font-size*1.15;
+    padding: 0;
+    height: auto;
+    img{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+       
+    }
+}
+.collective_payment:hover{
+    border: 2px solid rgb(97, 97, 97);
+    background-color: rgba(45, 193, 206, 0.767);
+    color: #FFF;
+    padding: 15px 0;
 
+}
+.collective_payment{
+background-color: #FFF;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border: 1px solid rgba(97, 97, 97, 0.534);
+padding: 15px 0;
+text-align: center;
+width: 60vw;
+margin-top: 10px;
+h3{
+border-bottom: none;
+font-size: $font-size-tall;
+font-weight: 500;
+padding: 0;
+}
+p{
+color: rgba(0, 0, 0, 0.815);
+padding: 15px 0;
+font-size: $font-size*1.15;
+line-height: 1.5em;
+}
+}
+
+h3{
+font-size: $font-size-tall;
+font-weight: 500;
+border-bottom: 2px solid black;
+padding: 20px 0;
+}
+p{
+color: #0000009d;
+padding: 10px;
+font-size: $font-size*1.15;
+font-weight: 700;
+line-height: 0;
+span{
+    font-weight: 700;
+    color: black;
+}
+
+}
+.engagement_content p{
+    margin-top: 0;
+    padding-top: 0;
+}
+}
 
 section.sec3{
     width: 100%;
@@ -202,7 +251,7 @@ section.sec4{
 section.sec4bis{
     .profil_cam img{
         background-color: rgb(255, 127, 67);
-        margin-top: 20px;
+        margin-top: 80px;
         padding: 10px;
         width: 450px;
         border-radius: 50% 50%;
@@ -222,7 +271,7 @@ section.sec4bis{
     }
     .sec4bis_content{
         width: 50vw;
-        padding: 0px 0px 100px 150px;
+        padding: 50px 0px 100px 150px;
         h3{
         font-size: $font-size-tall;
         font-weight: 500;
@@ -238,6 +287,7 @@ section.sec4bis{
 }
 
 #contact{
+    
     .contact_card img{
         width: 400px;
     }
@@ -255,6 +305,9 @@ section.sec4bis{
         justify-content: center;
         text-align: center;
         width: 100%;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.253);
+        margin-bottom: 30px;
         .plane_icon{
             margin: 20px 10vw;
             border-top: 1px solid rgba(0, 0, 0, 0.52);
@@ -288,10 +341,13 @@ section.sec4bis{
         padding: 0 0 20px 0;
         }
         .contact_information{
+            
             font-style: italic;
+            font-weight: 100;
+        
         }
         a{
-        color: black;   
+        
         }
         p:first-of-type, :nth-of-type(2), :last-of-type{
         margin-top: 10px; 
@@ -330,6 +386,7 @@ section.sec4bis{
     
         }
          img{
+            color: #fff;
             width: 60px;
             height: 50px;
             padding-bottom: 0;
@@ -340,15 +397,17 @@ section.sec4bis{
         //border-top: 1px solid rgba(0, 0, 0, 0.52);
         padding: 10px 0 0 0;
         margin: 0px 16vw;
-
+        
     .mail{
         i{
+            
             margin-right: 10px;
             font-size: 20px;
             margin-top: 0;
 
         }
         a{
+            color: #fff;
             margin-left: 10px;
         }
     }
@@ -428,46 +487,22 @@ section.sec4bis{
             justify-content: center;
             //text-align: center;
             img{
-                margin-top: 50px;
-                padding: 10px 0;
+                margin-top: 0;
+                padding: 10px;
                 width: 100vw;
                 height: 300px;
+                background-color: rgb(255, 127, 67);
             }
             .accessbars img{
                 width: 100vw;
                 height: 350px;
-        
+                padding: 10px;
+                margin: 0 0 20px 0;
+                background-color: rgb(255, 127, 67);
             }
             .sec2_content{
                 width: 100%;
                 padding:  30px;
-                .collective_payment:hover{
-                    border: 2px solid rgb(97, 97, 97);
-                    background-color: #1AA9B6;
-        
-        
-                }
-                .collective_payment{
-                background-color: #FFF;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                border: 2px solid rgba(97, 97, 97, 0.534);
-                text-align: center;
-                width: 80vw;
-                margin-top: 30px;
-                h3{
-                border-bottom: none;
-                font-size: $font-size-tall;
-                font-weight: 500;
-                padding: 15px 10px;
-                }
-                p{
-                color: rgba(0, 0, 0, 0.815);
-                padding: 15px 0;
-                line-height: 1.5em;
-                }
-                }
                 
                 h3{
                 font-size: $font-size-tall;
@@ -487,6 +522,65 @@ section.sec4bis{
             }
             }
         }
+        .payment_block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 5px;
+            background-color: #D0AC68;
+        .collective_payment:hover{
+            border: 2px solid rgb(97, 97, 97);
+            background-color: rgb(45, 192, 206);
+            color: #FFF;
+            padding: 15px 0;
+        
+        }
+        .collective_payment{
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid rgba(97, 97, 97, 0.534);
+        padding: 15px 0;
+        text-align: center;
+        width: 95vw;
+        margin-top: 10px;
+        h3{
+        border-bottom: none;
+        font-size: $font-size-tall;
+        font-weight: 500;
+        padding: 0;
+        }
+        p{
+        color: rgba(0, 0, 0, 0.815);
+        padding: 15px 0;
+        line-height: 1.5em;
+        }
+        }
+        
+        h3{
+        font-size: $font-size-tall;
+        font-weight: 500;
+        border-bottom: 2px solid black;
+        padding: 20px 0;
+        }
+        p{
+        color: #0000009d;
+        padding: 20px 0;
+        line-height: 1.5em;
+        span{
+            font-weight: 700;
+            color: black;
+        }
+        
+        }
+        .engagement_content p{
+            margin-top: 0;
+            padding-top: 0;
+        }
+        }
+        
         
         
         
@@ -527,21 +621,26 @@ section.sec4bis{
         }
         
         section.sec4{
-            .profil_cam img{
-                width: 80vw;
-                border-radius: 50% 50%;
-            }
+            
             display: flex;
             flex-direction: column;
             background-color: #FFF;
             width: 100vw;
             height: auto;
-            
+            margin: 0;
+            .profil_cam img{
+                width: 80vw;
+                border-radius: 50% 50%;
+            }
             .sec4mobile_img img{
                 display: block;
-                padding: 0;
-                width: 100vw;
+                text-align: center;
+                padding: 10px;
+                margin: 0 0 20px 0;
+                width: 99%;
                 height: 300px;
+                background-color: rgb(255, 127, 67);
+
             }
 
             .sec4_img img{

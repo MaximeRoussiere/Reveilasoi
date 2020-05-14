@@ -462,7 +462,8 @@ if ($relax_pages_query->have_posts()) :
       ?>
 
         <div class="sec2_content">
-
+        
+          
           <h3><?php the_title(); ?></h3>
 
           <p><?php the_content(); ?></p>
@@ -483,16 +484,16 @@ if ($relax_pages_query->have_posts()) :
           <li>Espèces</li>
           <li>Chèques</li></p>
           
-         
+        </div>
 
-           <div class="bankflower">
+           <div class="sec2_img">
             <img src="<?= get_the_post_thumbnail_url(); ?>">
           </div> 
-        
+      
       <?php
             endwhile;
           ?>
-          
+         
           <?php
             endif;
           ?>
@@ -513,8 +514,9 @@ if ($relax_pages_query->have_posts()) :
       if ($costindividual_pages_query->have_posts()) :
 
       ?>   
+        <section class="payment_block">
 
-          <div class="collective_payment">
+          <div class="collective_payment"><a href="http://localhost/projetspersos/Reveil-theme/boutique/" class="payment_link">
 
           <?php
 
@@ -529,7 +531,7 @@ if ($relax_pages_query->have_posts()) :
             <p>Etudiants (de 16 à 25 ans) : 45 €</p>
             <p>Enfants (de 8 à 15 ans) : 40 €</p>
             -->
-          </div>
+          </a></div>
 
           <?php
             endwhile;
@@ -556,7 +558,7 @@ if ($relax_pages_query->have_posts()) :
         if ($costgroup_pages_query->have_posts()) :
 
         ?>   
-          <div class="collective_payment">
+          <div class="collective_payment"><a href="http://localhost/projetspersos/Reveil-theme/boutique/" class="payment_link">
           <?php
 
       while ($costgroup_pages_query->have_posts()) :
@@ -569,7 +571,9 @@ if ($relax_pages_query->have_posts()) :
             <p>Relaxation collective :12 €</p>
             <p>10 séances : 100 €</p>
             -->
-          </div>
+            <a href="<?php echo esc_url( get_page_link( 122 ) ); ?>" class="booking_link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/calendar.png" class="calendar"  alt="calendar"/>Réservez votre séance</a>
+
+      </a></div>
 
           <?php
             endwhile;
@@ -596,7 +600,7 @@ if ($relax_pages_query->have_posts()) :
 
         ?>   
 
-          <div class="collective_payment">
+          <div class="collective_payment"><a href="http://localhost/projetspersos/Reveil-theme/boutique/" class="payment_link">
 
           <?php
 
@@ -606,7 +610,10 @@ if ($relax_pages_query->have_posts()) :
 
             <h3><?php the_title(); ?></h3>
             <p><?php the_content(); ?></p>
-          </div>
+      </a></div>
+
+      
+
 
           <?php
             endwhile;
@@ -648,13 +655,17 @@ if ($relax_pages_query->have_posts()) :
                 <?php
                   endwhile;
                 ?>
+      </div>           
         </section>
+                
+
                       <?php
                           endif;
                         ?>
 
-    </section>  
-      
+    </section>
+      </section>
+
       <?php
 
       $profile_pages_query=new WP_QUERY(

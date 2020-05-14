@@ -14,12 +14,12 @@ get_header('shop');
 
       
 
-      
+    <div class="shop_page">
 
        <?php  woocommerce_content(); ?>
 
 
-     
+     </div>
         
 
   

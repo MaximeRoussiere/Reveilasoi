@@ -172,6 +172,10 @@
           }
           
           // Form
+
+          .wpcf7 input, textarea{
+                max-width: 90vw;
+          }
           form {
                   border: 1px solid rgba(82, 82, 82, 0.555);
                   padding: 10px;
@@ -220,7 +224,7 @@
                         textarea {
                               border:none;
                               background:$field-color;
-                              width:100% - $hover-label-width - $placeholder-bumper;
+                              width:80% - $hover-label-width - $placeholder-bumper;
                               margin:0;
                               padding:$label-padding 0;
                               padding-left:$hover-label-width + $placeholder-bumper;

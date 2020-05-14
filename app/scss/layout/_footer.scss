@@ -12,6 +12,38 @@ footer{
     //position: relative;
 }
 
+.contact_footer{
+    text-align: center;
+    width: 100vw;
+    img{
+        text-align: center;
+        width: 40px;
+        height: 40px;
+    }
+    &_name{
+        padding: 15px 0;
+        font-size: $font-size-tall;
+        font-weight: 800;
+    }
+    &_adress{
+        padding: 15px 0 0 0;
+        font-style: italic;
+        font-weight: 300;
+    }
+    &_postcode{
+        padding: 0 0 15px 0;
+        font-weight: 300;
+    }
+    &_phone{
+        padding: 15px 0 0 0;
+        font-weight: 500;
+    }
+    &_mail{
+        padding: 0 0 15px 0;
+        font-weight: 500;
+    }
+}
+
 // legal mentions
 
 .legal_mentions{
