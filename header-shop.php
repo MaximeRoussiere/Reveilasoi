@@ -67,7 +67,7 @@ wp_head();
       
       <ul class="navigation_link">
        
-          <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/" class="nav__link">Accueil</a></li>
+      <h4 id="navigation-menu"><i class="fa fa-bars" aria-hidden="true"></i><?php the_title(); ?></h4>
           
       </ul>
     
@@ -150,7 +150,11 @@ wp_head();
     <div class="navigation_right">  
       <ul class="navigation_link">
        
-          <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/" class="nav__link">Accueil</a></li>
+      <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/" class="nav__link">Accueil</a></li>
+          <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/blog/" class="nav__link">Blog</a></li>
+          <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/boutique/" class="nav__link">Boutique</a></li>
+          <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/panier/" class="nav__link">Panier</a></li>
+          <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/contactez-moi/" class="nav__link">Contact</a></li>
           
       </ul>
     </div> 

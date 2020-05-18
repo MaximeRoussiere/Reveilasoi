@@ -493,6 +493,8 @@ if ($relax_pages_query->have_posts()) :
       <?php
             endwhile;
           ?>
+
+          </section>
          
           <?php
             endif;
@@ -531,7 +533,18 @@ if ($relax_pages_query->have_posts()) :
             <p>Etudiants (de 16 à 25 ans) : 45 €</p>
             <p>Enfants (de 8 à 15 ans) : 40 €</p>
             -->
-          </a></div>
+
+            <p class="booking_cost">
+                
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/calendar.png" class="cost_calendar"  alt="calendar"/><a href="<?php echo esc_url( get_page_link( 122 ) ); ?>" class="booking_link">Réservez votre séance</a>
+              
+           
+         
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/buy.png" class="cost_shopping"  alt="booking"/><a href="<?php echo esc_url( get_page_link( 139 ) ); ?>" class="booking_link">Offrir une séance bien-être</a>
+             
+            </p>
+          </a>
+          </div>
 
           <?php
             endwhile;
@@ -571,9 +584,18 @@ if ($relax_pages_query->have_posts()) :
             <p>Relaxation collective :12 €</p>
             <p>10 séances : 100 €</p>
             -->
-            <a href="<?php echo esc_url( get_page_link( 122 ) ); ?>" class="booking_link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/calendar.png" class="calendar"  alt="calendar"/>Réservez votre séance</a>
-
-      </a></div>
+            <p class="booking_cost">
+                
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/calendar.png" class="cost_calendar"  alt="calendar"/><a href="<?php echo esc_url( get_page_link( 122 ) ); ?>" class="booking_link">Réservez votre séance</a>
+              
+           
+         
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/buy.png" class="cost_shopping"  alt="booking"/><a href="<?php echo esc_url( get_page_link( 139 ) ); ?>" class="booking_link">Offrir une séance bien-être</a>
+             
+            </p>
+      </a>
+        </div>
+      
 
           <?php
             endwhile;
@@ -610,7 +632,19 @@ if ($relax_pages_query->have_posts()) :
 
             <h3><?php the_title(); ?></h3>
             <p><?php the_content(); ?></p>
-      </a></div>
+
+            <p class="booking_cost">
+                
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/calendar.png" class="cost_calendar"  alt="calendar"/><a href="<?php echo esc_url( get_page_link( 122 ) ); ?>" class="booking_link">Réservez votre séance</a>
+              
+           
+         
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/buy.png" class="cost_shopping"  alt="booking"/><a href="<?php echo esc_url( get_page_link( 139 ) ); ?>" class="booking_link">Offrir une séance bien-être</a>
+             
+            </p>
+
+      </a>
+    </div>
 
       
 
@@ -663,7 +697,7 @@ if ($relax_pages_query->have_posts()) :
                           endif;
                         ?>
 
-    </section>
+   
       </section>
 
       <?php
@@ -920,3 +954,5 @@ if ($relax_pages_query->have_posts()) :
   <?php  
 
 get_footer();
+
+?>

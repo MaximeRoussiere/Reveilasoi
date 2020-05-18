@@ -63,7 +63,7 @@ wp_head();
       </section>
     
       <div class="menu">
-        <h4 id="navigation-menu"><?php the_title(); ?></h4>
+      <h4 id="navigation-menu"><i class="fa fa-bars" aria-hidden="true"></i><?php the_title(); ?></h4>
       </div>
 
       <?php

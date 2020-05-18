@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/ico" href="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/favicon.ico"/>  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -58,19 +58,14 @@ wp_head();
       $navmobile_pages_query->the_post();
       ?>
 
-    <section class="block_logo">
       <section class="logo">
         <p class="logo_img"><a href="<?php home_url() ?>"><img src="<?= get_the_post_thumbnail_url(); ?>"></a></p>
       </section>
     
-      <div class="menu">
-      <ul class="navigation_link">
-       
-      <h4 id="navigation-menu"><i class="fa fa-bars" aria-hidden="true"></i><?php the_title(); ?></h4>
-       
-   </ul>
+      <div class="menu">          
+          <h4 id="navigation-menu"><i class="fa fa-bars" aria-hidden="true"></i><?php the_title(); ?></h4>
       </div>
-    </section>
+
       <?php
             endwhile;
           ?>
@@ -102,7 +97,7 @@ wp_head();
       ?>   
       
 
-    <nav  class="navigation_blog">
+    <nav  class="navigation">
 
     <?php
 
@@ -131,30 +126,31 @@ wp_head();
       'theme_location'=>'header-menu',
       'menu_class'=>'navigation_link',
       'container'=>'div',
-      'container_class'=>'navigation_right',
+      'container_class'=>'navigation_right', 
     ]
     ); */
     ?>
 
-    <div class="navigation_center">
-       <h2 class="blog_title"> <a href="http://localhost/projetspersos/Reveil-theme/mon-blog/">Bienvenue, vous pouvez réserver maintenant</a></h2>
-    </div>
+     <div class="navigation_right">  
 
-
-    <div class="navigation_right">  
-      <ul class="navigation_link">
+    <ul class="navigation_link">
        
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/" class="nav__link">Accueil</a></li>
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/blog/" class="nav__link">Blog</a></li>
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/boutique/" class="nav__link">Boutique</a></li>
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/panier/" class="nav__link">Panier</a></li>
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/contactez-moi/" class="nav__link">Contact</a></li>
-      </ul>
-    </div> 
+        </ul>
+  </div> 
 
       </nav>
   </header>
 
+  
 
+    <!--<section class="banner_img">
+        <img src="/images/tree.png" class="tree_img rellax"  data-rellax-speed="-3" alt="tree">
+    </section>-->
+  </section>
 
   

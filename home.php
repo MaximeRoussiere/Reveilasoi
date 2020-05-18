@@ -1,5 +1,5 @@
 <?php
-get_header('nav');
+get_header('blog');
 ?>
 
 
@@ -84,7 +84,7 @@ get_header('nav');
      
 
 
-</div>
+
 <?php
   
      // Stop the loop when all posts are displayed
@@ -98,7 +98,8 @@ get_header('nav');
  ?>
  <p class="blog_home_empty">Les articles sont en cours de parution, revenez prochainement <i class="fa fa-smile-o" aria-hidden="true"></i></p>
  
-
+ 
+</section>
 <?php
  endif;
   ?>
@@ -112,7 +113,7 @@ $args = [
   echo str_replace( "<ul class='page-numbers'>", '<ul class="pagination">', paginate_links($args));
   
   ?>
-</section>
+
 
 
   
