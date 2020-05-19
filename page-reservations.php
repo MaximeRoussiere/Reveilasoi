@@ -1,5 +1,5 @@
 <?php
-get_header('book');
+get_header('blog');
 ?>
 
 

@@ -1,11 +1,15 @@
 <?php
-get_header('nav');
+get_header('blog');
 ?>
 
 <?php // checks if there are any posts that match the query
  if (have_posts()) :
   ?>
 <section class="blog_home">
+
+<div class="navigation_center">
+       <h2 class="blog_title"> <a href="http://localhost/projetspersos/Reveil-theme/mon-blog/">Bienvenue sur mon blog</a></h2>
+    </div>
 
 <div class="categories">
   <ul>
@@ -60,9 +64,44 @@ get_header('nav');
               </a>
     
     </section>
-     
+
+    <?php
+
+$minibio_pages_query=new WP_QUERY(
+[
+'post_type'=> 'page',
+'post_parent'=> 163,
+'orderby' => 'menu_order',
+'order'=> 'ASC',
+'posts_per_page'=> -1
+]
+);
 
 
+if ($minibio_pages_query->have_posts()) :
+
+?>   
+     <?php
+
+              while ($minibio_pages_query->have_posts()) :
+              $minibio_pages_query->the_post();
+              ?>
+    <section class="single_block_bio">
+
+    <div class="single_bio_title"><img class="single_bio_img" src="<?= get_the_post_thumbnail_url(); ?>" alt="bio-card"/><?php the_title()?></div>
+
+    <div class="single_bio_content">
+      <p ><?php the_content() ?></p>
+    </div>
+    </section>
+<?php
+        endwhile;
+      ?>
+    
+
+    <?php
+        endif; wp_reset_postdata();
+      ?>
      <section class="single_block_content">
         
         <p class="blog--single_content"><?php the_content() ?></p>
@@ -96,7 +135,7 @@ get_header('nav');
 </section>
 
 <?php
- endif;
+ endif; wp_reset_postdata();
  ?>
 
 

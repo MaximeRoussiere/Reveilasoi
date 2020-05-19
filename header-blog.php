@@ -59,7 +59,7 @@ wp_head();
       ?>
 
       <section class="logo">
-        <p class="logo_img"><a href="<?php home_url() ?>"><img src="<?= get_the_post_thumbnail_url(); ?>"></a></p>
+        <p class="logo_img"><a href="http://localhost/projetspersos/Reveil-theme/"><img src="<?= get_the_post_thumbnail_url(); ?>"></a></p>
       </section>
     
       <div class="menu">          
@@ -137,6 +137,7 @@ wp_head();
        
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/" class="nav__link">Accueil</a></li>
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/blog/" class="nav__link">Blog</a></li>
+          <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/reservations/" class="nav__link">Réservations</a></li>
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/boutique/" class="nav__link">Boutique</a></li>
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/panier/" class="nav__link">Panier</a></li>
           <li class="section_link"><a href="http://localhost/projetspersos/Reveil-theme/contactez-moi/" class="nav__link">Contact</a></li>

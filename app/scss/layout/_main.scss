@@ -112,7 +112,7 @@ section.sec2{
 .booking_cost{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     font-size: $font-size*1.15;
     padding: 0;
     margin: 0;
@@ -134,13 +134,14 @@ section.sec2{
         margin: 0 10px 0 150px;
     }
     .booking_link{
+        color: rgb(82, 82, 82);
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         border-right: 1px solid black;
         font-weight: 500;
         padding: 7px;
         &:hover{
-            color: rgb(82, 82, 82);
+            color: black;
             background-color: #a0f4ff;
             border-top: 2px solid black;
             border-bottom: 2px solid black;
@@ -289,8 +290,8 @@ section.sec4bis{
         background-color: rgb(255, 127, 67);
         margin-top: 80px;
         padding: 5px;
-        width: 450px;
-        border-radius: 50% 50%;
+        width: 500px;
+        height: auto;
     }
     width: 100%;
     height: auto;
@@ -578,7 +579,7 @@ section.sec4bis{
             margin: 0;
             width: 100vw;
             padding: 50px 0;
-            background-color: #e4ce79;
+            background-color: #60cedd;
             a{
                 color: black;
                 &:hover{
@@ -617,8 +618,8 @@ section.sec4bis{
                 font-weight: 500;
                 padding: 7px;
                 &:hover{
-                    color: black;
-                    background-color: rgb(235, 219, 155);
+                    color: rgb(82, 82, 82);
+                    background-color: #a0f4ff;
                     border-top: 2px solid black;
                     border-bottom: 2px solid black;
                     border-right: 2px solid black;
@@ -670,7 +671,6 @@ section.sec4bis{
         padding: 10px;
         font-size: $font-size*1.15;
         font-weight: 700;
-        line-height: 0;
         span{
             font-weight: 700;
             color: black;
@@ -678,8 +678,9 @@ section.sec4bis{
         
         }
         .engagement_content p{
-            margin: 0 10px;
-            padding-top: 0;
+            text-align: center;
+            margin: 10px 0;
+            padding: 0 10px;
         }
         }
         
@@ -1048,7 +1049,7 @@ section.sec4bis{
             width: 100vw;
             padding: 20px;
             margin: 0px;
-            background-color: #D0AC68;
+            background-color: #60cedd;
         .collective_payment:hover{
             border: 2px solid rgb(97, 97, 97);
             background-color: rgb(255, 255, 255);
@@ -1126,7 +1127,8 @@ section.sec4bis{
                 padding: 7px;
                 text-decoration: underline;
                 &:hover{
-                    color: black;
+                    color: rgb(82, 82, 82);
+                    background-color: #a0f4ff;
                     font-weight: 700;
                     text-decoration: underline;
                 }
@@ -1134,6 +1136,7 @@ section.sec4bis{
             }
         }
         .engagement_content p{
+            text-align: center;
             margin: 0 20px;
             padding-top: 0;
         }
@@ -1317,7 +1320,7 @@ section.sec4bis{
             width: 100vw;
             padding: 10px;
             margin: 0px;
-            background-color: #D0AC68;
+            background-color: #60cedd;
         .collective_payment:hover{
             border: 2px solid rgb(97, 97, 97);
             background-color: rgb(255, 255, 255);
@@ -1396,8 +1399,8 @@ section.sec4bis{
                 text-decoration: underline;
                 &:hover{
                     border: 1px solid black;
-                    background-color: rgb(233, 195, 125);
-                    color: black;
+                    color: rgb(82, 82, 82);
+                    background-color: #a0f4ff;
                     font-weight: 700;
                     text-decoration: underline;
                 }
@@ -1405,6 +1408,7 @@ section.sec4bis{
             }
         }
         .engagement_content p{
+            text-align: center;
             margin: 0 20px;
             padding-top: 0;
         }

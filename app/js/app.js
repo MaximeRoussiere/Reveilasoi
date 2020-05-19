@@ -48,7 +48,7 @@ var app = {
 
   $(document).ready(function(){
 	  $(".responsive-bar .menu h4").click(function(){
-		  $('div .navigation_link').slideToggle(750);  
+		  $('div .navigation_link').slideToggle(250);  
 		});
 		$(window).resize(function() {		
 			if (  $(window).width() > 1500 ) {			
@@ -98,7 +98,7 @@ var app = {
 });
 $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$("#home").offset().top},"200");return false})})
 
-	// CONTACT FORM Input Lock
+/*	// CONTACT FORM Input Lock
 $('textarea').blur(function () {
     $('#hire textarea').each(function () {
         $this = $(this);
@@ -139,7 +139,7 @@ $('#hire .field:nth-child(2) input').blur(function () {
           $('.field:nth-child(2) input + label + span').css({'opacity': 0});
         }
     });
-});
+});*/
 
 //ANIMATE
 

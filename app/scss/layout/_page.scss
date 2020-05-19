@@ -45,6 +45,7 @@
 .cpp_form{
         background-color: rgba(0,0,0,0.5);
         text-align: center;
+        width: 60%;
     }
 #fbuilder { 
     .usedSlotsfieldname3_1{
@@ -190,3 +191,43 @@
         line-height: 1.5em;
         padding: 20px 0;
     }
+
+    @media screen and (max-width: 1400px) {
+
+        .cpp_form{
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            width: 70%;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+
+        .cpp_form{
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .cpp_form{
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .cpp_form{
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+
+
+    

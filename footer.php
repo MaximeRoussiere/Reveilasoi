@@ -10,8 +10,8 @@
 </div>
 
     <div class="menu_social">
-      <a href="#" class="menu__list__item__link_fa"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="menu__list__item__link_ink"><i class="fa fa-linkedin"></i></a>
+      <a href="https://m.facebook.com/stephaniejauffrineau01/" class="menu__list__item__link_fa"><i class="fa fa-facebook"></i></a>
+      <a href="https://fr.linkedin.com/in/st%C3%A9phanie-jauffrineau-0a75aa19b" class="menu__list__item__link_ink"><i class="fa fa-linkedin"></i></a>
       <a href="#" class="menu__list__item__link_insta"><i class="fa fa-instagram"></i></a>
 </div>
 

@@ -10,6 +10,10 @@ get_header('blog');
   ?>
 <section class="blog_home">
 
+    <div class="navigation_center">
+       <h2 class="blog_title"> <a href="http://localhost/projetspersos/Reveil-theme/mon-blog/">Bienvenue sur mon blog</a></h2>
+    </div>
+
 <div class="categories">
   <ul>
     <li><a href="http://localhost/projetspersos/Reveil-theme/blog/"><i class="fa fa-tag" aria-hidden="true"></i>tous les articles</a></li>

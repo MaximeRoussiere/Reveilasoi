@@ -8,7 +8,7 @@ Template Name: Shop Page
 
 <?php
 
-get_header('shop');
+get_header('blog');
 
 ?>
 

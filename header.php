@@ -59,7 +59,7 @@ wp_head();
       ?>
 
       <section class="logo">
-        <p class="logo_img"><a href="<?php home_url() ?>"><img src="<?= get_the_post_thumbnail_url(); ?>"></a></p>
+        <p class="logo_img"><a href="http://localhost/projetspersos/Reveil-theme/"><img src="<?= get_the_post_thumbnail_url(); ?>"></a></p>
       </section>
     
       <div class="menu">
