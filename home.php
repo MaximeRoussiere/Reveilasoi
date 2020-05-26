@@ -54,7 +54,7 @@ get_header('blog');
       
       <h2  <?php the_ID(); ?>><a class="blog_link_title" href="<?php the_permalink() ?>"  <?php the_title(); ?>><?php the_title(); ?></a></h2>
      
-      <p class="blog_content"><?php echo wp_trim_words( get_the_excerpt(), 15, '[...]')?><a class="blog_link" href="<?php the_permalink() ?>"> Lire plus </a></p>
+      <p class="blog_content"><?php echo wp_trim_words( get_the_excerpt(), 10, '[...]')?><a class="blog_link" href="<?php the_permalink() ?>"> Lire plus </a></p>
       
 
 

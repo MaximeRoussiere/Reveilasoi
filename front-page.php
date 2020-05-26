@@ -49,16 +49,16 @@ get_header();
             J'accompagne des particuliers (enfants, adolescents, adultes, personnes âgées) en séance individuelle ou collective à mon cabinet ou à domicile.</p>
 
             <p>Je vous reçois avec bienveillance pour trouver ensemble des solutions en vous apportant des outils adaptés à chaque situation. </p>
-          -->
+          
             <li>S'épanouir harmonieusement</li>
 
             <li>Reprendre confiance en soi</li>
               
             <li>Trouver un équilibre</li>
               
-            <li> Détente et bien-être</li>
+            <li>Détente et bien-être</li>
               
-            <li> Gestion des émotions</li>
+            <li>Gestion des émotions</li>-->
 
 
         </div>
@@ -518,7 +518,7 @@ if ($relax_pages_query->have_posts()) :
       ?>   
         <section class="payment_block">
 
-          <div class="collective_payment"><a href="http://localhost/projetspersos/Reveil-theme/boutique/" class="payment_link">
+          <div class="collective_payment"><a href="https://stephaniejauffrineau.fr/boutique/" class="payment_link">
 
           <?php
 
@@ -571,7 +571,7 @@ if ($relax_pages_query->have_posts()) :
         if ($costgroup_pages_query->have_posts()) :
 
         ?>   
-          <div class="collective_payment"><a href="http://localhost/projetspersos/Reveil-theme/boutique/" class="payment_link">
+          <div class="collective_payment"><a href="https://stephaniejauffrineau.fr/boutique/" class="payment_link">
           <?php
 
       while ($costgroup_pages_query->have_posts()) :
@@ -622,7 +622,7 @@ if ($relax_pages_query->have_posts()) :
 
         ?>   
 
-          <div class="collective_payment"><a href="http://localhost/projetspersos/Reveil-theme/boutique/" class="payment_link">
+          <div class="collective_payment"><a href="https://stephaniejauffrineau.fr/boutique/" class="payment_link">
 
           <?php
 
@@ -803,7 +803,7 @@ if ($relax_pages_query->have_posts()) :
             </div>
 
           
-          <p class="mail"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:stepha.retailleau@gmail.com">stepha.retailleau@gmail.com</a></p>  
+          <p class="mail"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:stepha.jauffrineau@gmail.com">stepha.jauffrineau@gmail.com</a></p>  
 
         </div>
 
@@ -905,7 +905,7 @@ if ($relax_pages_query->have_posts()) :
           </div>
 
           <section id="hire">
-             <form>
+             <div class="contact7_form">
             <h1>Ecrivez-moi !</h1>
 
             <?php
@@ -943,7 +943,7 @@ if ($relax_pages_query->have_posts()) :
                 </div>
         
                 <input class="button" type="submit" value="Envoyer" />-->
-          </form>
+              </div>
 
         </section>
 

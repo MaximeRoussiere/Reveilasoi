@@ -1,5 +1,5 @@
 <?php
-get_header('nav');
+get_header('blog');
 ?>
 
 

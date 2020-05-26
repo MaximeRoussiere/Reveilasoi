@@ -1,5 +1,5 @@
 <?php
-get_header('classik');
+get_header('blog');
 ?>
 
 
@@ -11,26 +11,26 @@ get_header('classik');
 
           
 
-        <div class="page">
+        <div class="legalmentions">
         <?php
 
       while (have_posts()) :
        the_post();
       ?>
         
-      <section class="page_title">
+      <section class="legalmentions_title">
 
       <?php  the_title();?>
       
       </section>
 
-      <section class="page_classik_content">
+      <section class="legalmentions_block">
 
        <?php  the_content(); ?>
 
       </section>  
 
-      <section class="page_classik_image">
+      <section class="legalmentions_image">
 
       <img  src="<?= get_the_post_thumbnail_url(); ?>">
 

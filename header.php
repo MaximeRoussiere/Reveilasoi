@@ -1,3 +1,10 @@
+<?php
+    if(isset($_GET['accepte-cookie'])){
+      setcookie('accepte-cookie', 'true', time() + 365*24*3600);
+      header('location: ./');
+    }
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +12,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/ico" href="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/favicon.ico"/>  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="style.css" />
+  
+ <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">-->
   <!--<link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">-->
 
@@ -161,6 +169,8 @@ wp_head();
 
   <section id="home"  class="banner">
 
+  
+
   <?php
         the_post_thumbnail(
             'post-thumbnail',
@@ -182,8 +192,9 @@ wp_head();
             <div  class="button_home"><a href="<?= get_post_type_archive_link('post') ?>" class="button_link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/clovers.png" class="clovers"  alt="clovers">Mon blog<img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/stars.png" class="stars"  alt="stars"></a></div>
             <div  class="button_home"><a href="<?php echo esc_url( get_page_link( 122 ) ); ?>" class="button_link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/app/assets/images/calendar.png" class="calendar"  alt="clovers">Réservez votre séance</a></div>
 
-        </div>
-  
+        </div> 
+        
+        
         </header>
 
         
@@ -195,6 +206,26 @@ wp_head();
     <!--<section class="banner_img">
         <img src="/images/tree.png" class="tree_img rellax"  data-rellax-speed="-3" alt="tree">
     </section>-->
+
+  <?php
+    if(!isset($_COOKIE['accepte-cookie'])){
+
+    
+    
+?>
+   <div id="cookie-notification" class="CookieMessage">
+  <div class="CookieMessage-content"> 
+    <p>En poursuivant votre navigation sur ce site, vous acceptez notre politique de confidentialité et l’utilisation de cookies pour vous proposer des contenus et services adaptés à vos centres d’intérêts.<p>
+    <p><a id="cookie-notification-close" class="CookieMessage-button" href="?accepte-cookie">En savoir plus</a><a id="cookie-notification-close" class="CookieMessage-button" href="?accepte-cookie">Ok</a></p>
+    
+  </div>
+</div>
+
+<?php
+    }
+?>
+  
+    
   </section>
 
   

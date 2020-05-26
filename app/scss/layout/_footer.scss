@@ -215,8 +215,145 @@ footer{
     }
 }
 
+// LEGAL MENTION PAGE ONLY
+
+.legalmentions_title{
+    text-align: center;
+    background:#FFF;
+    opacity: 0.95;
+    padding-top: 150px;
+    width: 100vw;
+    font-size: $font-size-tall-very;
+    text-transform: uppercase;
+    color: black;
+}   
+.legalmentions{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+width: 100vw;
+.legalmentions_block{
+text-align: justify;
+width: 60vw;
+padding: 50px;
+line-height: 1.4em;
+}
+h2{
+font-weight: 900;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+}
+
 
 // MEDIA QUERIES
+
+@media (max-width: 1400px){
+
+        // LEGAL MENTION PAGE ONLY
+
+    .legalmentions_title{
+        text-align: center;
+        background:#FFF;
+        opacity: 0.95;
+        padding-top: 150px;
+        width: 100vw;
+        font-size: $font-size-tall-very;
+        text-transform: uppercase;
+        color: black;
+    }   
+    .legalmentions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    .legalmentions_block{
+    text-align: justify;
+    width: 70vw;
+    padding: 20px;
+    line-height: 1.4em;
+    }
+    h2{
+    font-weight: 900;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    }
+    }
+}
+
+@media (max-width: 900px){
+
+    // LEGAL MENTION PAGE ONLY
+
+.legalmentions_title{
+    text-align: center;
+    background:#FFF;
+    opacity: 0.95;
+    padding-top: 150px;
+    width: 100vw;
+    font-size: $font-size-tall-very;
+    text-transform: uppercase;
+    color: black;
+}   
+.legalmentions{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+width: 100vw;
+.legalmentions_block{
+text-align: justify;
+width: 80vw;
+padding: 10px;
+line-height: 1.4em;
+}
+h2{
+font-weight: 900;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+}
+}
+
+
+@media (max-width: 600px){
+
+    // LEGAL MENTION PAGE ONLY
+
+.legalmentions_title{
+    text-align: center;
+    background:#FFF;
+    opacity: 0.95;
+    padding-top: 150px;
+    width: 100vw;
+    font-size: $font-size-tall-very;
+    text-transform: uppercase;
+    color: black;
+}   
+.legalmentions{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+width: 100vw;
+.legalmentions_block{
+text-align: justify;
+width: 95vw;
+padding: 5px;
+line-height: 1.4em;
+}
+h2{
+font-weight: 900;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+}
+}
+
+
+    
 
 
 

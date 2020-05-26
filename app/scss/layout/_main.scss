@@ -52,23 +52,41 @@ section.sec2{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    grid-column-gap: 100px;
-    
+    column-gap: 20px;
+    .torrent_img{
+        display: flex;
+  align-items: center;
+  justify-content: center;
+    }
     img{
         width: 60%;
-        margin-top: 80px;
-        padding: 5px;
+        //margin-top: 80px;
+        padding: 4px;
         height: auto;
         background-color: rgb(255, 127, 67);
     }
-    .accessbars img{
-        margin-top: 80px;
-        width: 500px;
-        height: 500px;
+    .sec2_img{
+        display: flex;
+  align-items: center;
+  justify-content: center;
     }
+    .accessbars {
+        display: flex;
+  align-items: center;
+  justify-content: center;
+    img{
+        //margin-top: 80px;
+        width: 420px;
+        height: 450px;
+    }
+}
     .sec2_content{
-        width: 50vw;
-        padding: 50px 0 100px 150px;
+        text-align: justify;
+        width: 80%;
+        margin: 0 0 0 20%;
+        //padding: 50px 0 50px 150px;
+        
+  
         h3{
         font-size: $font-size-tall;
         font-weight: 500;
@@ -253,24 +271,27 @@ section.sec4{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    grid-column-gap: 50px;
+    column-gap: 20px;
     .sec4_img img{
         background-color: rgb(255, 127, 67);
-        padding: 5px;
-        width: 70%;
-        height: auto;
+        padding: 4px;
+        width: 60%;
+        height: 65%;
     }
     .sec4_img{
-    
-        margin: 50px 0 0 180px;
+        //margin: 0;
+        //padding: 80px 0 20px 180px;
+        display: flex;
+    align-items: center;
+    justify-content: center;
     }
     .sec4mobile_img img{
         display: none;
     }
     .sec4_content{
-        margin-right: 150px;
-        //width: 50vw;
-        padding: 50px 150px 0 0;
+        //margin-right: 120px;
+        width: 80%;
+        //padding: 50px 100px 0 0;
         h3{
         font-size: $font-size-tall;
         font-weight: 500;
@@ -286,26 +307,31 @@ section.sec4{
 }
    
 section.sec4bis{
-    .profil_cam img{
-        background-color: rgb(255, 127, 67);
-        margin-top: 80px;
-        padding: 5px;
-        width: 500px;
-        height: auto;
-    }
     width: 100%;
     height: auto;
     background-color: #FFF;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    grid-column-gap: 100px;
+    column-gap: 20px;
+    .profil_cam {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     img{
+        background-color: rgb(255, 127, 67);
+        //margin-top: 80px;
+        padding: 4px;
+        width: 450px;
+    }
+}
+    
+    /*img{
         margin-top: 150px;
         padding: 10px 0;
         width: 500px;
         height: auto;
-    }
+    }*/
     .sec4bis_content{
         width: 50vw;
         padding: 50px 0px 100px 150px;
@@ -521,7 +547,7 @@ section.sec4bis{
             justify-content: center;
             margin: 0 0 10px 0;
         img{
-                padding: 5px;
+                padding: 4px;
                 height: auto;
                 background-color: rgb(255, 127, 67);
             }
@@ -543,7 +569,7 @@ section.sec4bis{
                 justify-content: center;
             img{
                 width: 400px;
-                padding: 5px;
+                padding: 4px;
                 margin: 0 0 10px 0;
                 background-color: rgb(255, 127, 67);
             }
@@ -551,6 +577,7 @@ section.sec4bis{
             .sec2_content{
                 width: 100%;
                 padding:  30px;
+                margin: 0;
                 
                 h3{
                 font-size: $font-size-tall;
@@ -739,7 +766,7 @@ section.sec4bis{
             justify-content: center;
             img{
                 display: block;
-                padding: 5px;
+                padding: 4px;
                 margin: 0 0 20px 0;
                 width: 400px;
                 background-color: rgb(255, 127, 67);
@@ -944,7 +971,7 @@ section.sec4bis{
             justify-content: center;
             margin: 0 0 10px 0;
         img{
-                padding: 5px;
+                padding: 4px;
                 height: auto;
                 background-color: rgb(255, 127, 67);
             }
@@ -966,7 +993,7 @@ section.sec4bis{
                 justify-content: center;
             img{
                 width: 80%;
-                padding: 5px;
+                padding: 4px;
                 margin: 0 0 10px 0;
                 background-color: rgb(255, 127, 67);
             }
@@ -1011,7 +1038,7 @@ section.sec4bis{
             justify-content: center;
             img{
                 display: block;
-                padding: 5px;
+                padding: 4px;
                 margin: 0 0 20px 0;
                 width: 80%;
                 background-color: rgb(255, 127, 67);

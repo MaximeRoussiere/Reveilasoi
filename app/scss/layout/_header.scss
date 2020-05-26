@@ -1,3 +1,132 @@
+// COOKIE POPUP
+
+.CookieMessage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 999;
+  }
+  
+  .CookieMessage-content {
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 10px 0 10px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 12px;
+    a {
+      color: white;
+    }
+    
+    p {
+      margin: 0 0 10px 0;
+      font-size: $font-size*1.15;
+    }
+  }
+  
+  .CookieMessage-button {
+    background: #f6913a;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    &:hover {
+      background: #e38635;
+    }
+  }
+
+  @media (max-width: 900px){
+    .CookieMessage {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.85);
+        z-index: 999;
+      }
+      
+      .CookieMessage-content {
+        color: white;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px 10px 0 10px;
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 12px;
+        a {
+          color: white;
+        }
+        
+        p {
+          margin: 0 0 10px 0;
+          font-size: $font-size;
+        }
+      }
+      
+      .CookieMessage-button {
+        background: #f6913a;
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 10px;
+        margin-right: 20px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        &:hover {
+          background: #e38635;
+        }
+      }
+
+  }
+
+
+  @media (max-width: 600px){
+    .CookieMessage {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.85);
+        z-index: 999;
+      }
+      
+      .CookieMessage-content {
+        color: white;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px 10px 0 10px;
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 12px;
+        a {
+          color: white;
+        }
+        
+        p {
+          margin: 0 0 10px 0;
+          font-size: $font-size*0.90;
+        }
+      }
+      
+      .CookieMessage-button {
+        background: #f6913a;
+        display: inline-block;
+        text-decoration: none;
+        padding: 4px 5px;
+        margin-right: 20px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        &:hover {
+          background: #e38635;
+        }
+      }
+
+  }
+
 // navigation responsive
 
 .responsive-bar{
@@ -11,7 +140,7 @@ nav{
     top: 0;
     left: 0;
     width: 100vw;
-    max-height: 15vh;
+    min-height: 15vh;
     padding: 30px 40px;
     box-sizing: border-box;
     transition: 0.5s;
@@ -22,8 +151,6 @@ nav{
 
 .navigation_blog{
     position: fixed;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     top: 0;
     left: 0;
     width: 100vw;
@@ -52,7 +179,7 @@ nav .logo{
         float: left;
         font-size: $font-size*1.25;
         font-weight: 400;
-        padding: 30px 0 0 8px;
+        padding: 30px 0 10px 8px;
         line-height: 1.2em;
         span{
             font-weight: 200;
@@ -90,7 +217,7 @@ nav.black .logo{
 
 .nav__link{
     font-size: $font-size;
-    font-weight: 400;
+    font-weight: 350;
     line-height: 80px;
     color: #555555;
     padding: 5px 15px ;
@@ -101,7 +228,7 @@ nav.black .logo{
 
 .nav__link--active {
     color: rgb(0, 0, 0);
-    font-weight: 500;
+    font-weight: 450;
     border-bottom: 2px solid black;
     padding-bottom: 5px;
     text-decoration: none;
@@ -207,7 +334,7 @@ nav.black .logo{
     }
     nav{
         position: absolute;
-        height: 100px;
+        min-height: 10vh;
         //padding: 0;
         
     }
@@ -325,7 +452,7 @@ nav.black .logo{
     }
     nav{
         position: absolute;
-        height: 100px;
+        min-height: 10vh;
         //padding: 0;
         
     }

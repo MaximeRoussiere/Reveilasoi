@@ -2,6 +2,7 @@
 
 add_filter('show_admin_bar', '__return_false');
 add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
+add_filter( 'wpcf7_validate_configuration', '__return_false' );
 add_filter( 'big_image_size_threshold', '__return_false' );
 
 define('REVEIL_THEME_VERSION','1.0.0');
@@ -120,6 +121,5 @@ function mytheme_add_woocommerce_support() {
 }
 
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
-
 
 

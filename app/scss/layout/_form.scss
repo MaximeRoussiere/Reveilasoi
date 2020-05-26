@@ -41,7 +41,7 @@
   }
   
   // Form
-   form {
+  .contact7_form {
           border: 1px solid rgba(82, 82, 82, 0.555);
           padding: 10px;
           @include grid(7);
@@ -183,7 +183,7 @@
         .wpcf7 input, textarea{
               width: 100%;
         }
-        form {
+        .contact7_form {
                 border: 1px solid rgba(82, 82, 82, 0.555);
                 padding: 10px;
                 @include grid(7);
@@ -365,7 +365,7 @@
           .wpcf7 input, textarea{
                 max-width: 90vw;
           }
-          form {
+          .contact7_form {
                   border: 1px solid rgba(82, 82, 82, 0.555);
                   padding: 10px;
                   @include grid(7);

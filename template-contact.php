@@ -13,7 +13,7 @@ get_header('blog');
 <section class="hire_page">
 
 <section id="hire">
-             <form>
+             <div class="contact7_form">
             <h1>Ecrivez-moi !</h1>
 
             <?php
@@ -51,7 +51,7 @@ get_header('blog');
                 </div>
         
                 <input class="button" type="submit" value="Envoyer" />-->
-          </form>
+            </div>
 
         </section>
     

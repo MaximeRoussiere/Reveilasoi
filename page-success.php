@@ -1,5 +1,5 @@
 <?php
-get_header('classik');
+get_header('blog');
 ?>
 
 

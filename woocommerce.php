@@ -9,9 +9,7 @@ get_header('blog');
 
     ?>
         
-        
-      
-
+   
       
 
     <div class="shop_page">
